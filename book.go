@@ -16,8 +16,9 @@ type Book struct {
 }
 
 type Borrower struct {
-	ID       int    `json:"id"` // primary key
+	ID       int    `json:"id"` 
 	FullName string `json:"full_name"`
 	Email    string `json:"email"`
-	Phone    string `json:"phone"` // corresponds to phone_number column
+	Phone    string `json:"phone"`
 }
+
