@@ -12,7 +12,7 @@ var DB *sql.DB
 func ConnectDB() {
 	var err error
 
-	//  database name is `library`
+	//  my database name is `library`
 	DB, err = sql.Open(
 		"mysql",
 		"root:1234@tcp(127.0.0.1:3306)/library",
@@ -28,3 +28,4 @@ func ConnectDB() {
 
 	log.Println("Connected to MySQL database: library")
 }
+
